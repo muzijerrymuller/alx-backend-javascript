@@ -1,4 +1,5 @@
-// jerry muller
+//Defines functions returning preference for const and string combinations.
+
 export function taskFirst() {
   const task = 'I prefer const when I can.';
   return task;
