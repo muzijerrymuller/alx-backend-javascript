@@ -1,0 +1,13 @@
+{
+  "name": "0x00-ES6_basic",
+  "version": "1.0.0",
+  "description": "A project demonstrating basic ES6 features",
+  "main": "0-constants.js",
+  "scripts": {
+    "dev": "babel-node 0-main.js", // Added this line to run the project with Babel
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["ES6", "JavaScript", "babel"],
+  "author": "Jerry Muller",
+  "license": "ISC"
+}
