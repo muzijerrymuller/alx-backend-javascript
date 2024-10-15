@@ -1,42 +1,56 @@
-class HolbertonCourse:
-    def __init__(self, name: str, length: int, students: list):
-        if not isinstance(name, str):
-            raise TypeError("name must be a string")
-        if not isinstance(length, (int, float)):
-            raise TypeError("length must be a number")
-        if not isinstance(students, list) or not all(isinstance(student, str) for student in students):
-            raise TypeError("students must be a list of strings")
+class HolbertonCourse {
+    constructor(name, length, students) {
+        // Validate types during object creation
+        if (typeof name !== 'string') {
+            throw new TypeError('Name must be a string');
+        }
+        if (typeof length !== 'number') {
+            throw new TypeError('Length must be a number');
+        }
+        if (!Array.isArray(students) || !students.every(student => typeof student === 'string')) {
+            throw new TypeError('Students must be an array of strings');
+        }
+        
+        // Assign attributes with underscore versions
+        this._name = name;
+        this._length = length;
+        this._students = students;
+    }
 
-        self._name = name
-        self._length = length
-        self._students = students
+    // Getter and setter for name
+    get name() {
+        return this._name;
+    }
 
-    @property
-    def name(self):
-        return self._name
+    set name(newName) {
+        if (typeof newName !== 'string') {
+            throw new TypeError('Name must be a string');
+        }
+        this._name = newName;
+    }
 
-    @name.setter
-    def name(self, value: str):
-        if not isinstance(value, str):
-            raise TypeError("name must be a string")
-        self._name = value
+    // Getter and setter for length
+    get length() {
+        return this._length;
+    }
 
-    @property
-    def length(self):
-        return self._length
+    set length(newLength) {
+        if (typeof newLength !== 'number') {
+            throw new TypeError('Length must be a number');
+        }
+        this._length = newLength;
+    }
 
-    @length.setter
-    def length(self, value: int):
-        if not isinstance(value, (int, float)):
-            raise TypeError("length must be a number")
-        self._length = value
+    // Getter and setter for students
+    get students() {
+        return this._students;
+    }
 
-    @property
-    def students(self):
-        return self._students
+    set students(newStudents) {
+        if (!Array.isArray(newStudents) || !newStudents.every(student => typeof student === 'string')) {
+            throw new TypeError('Students must be an array of strings');
+        }
+        this._students = newStudents;
+    }
+}
 
-    @students.setter
-    def students(self, value: list):
-        if not isinstance(value, list) or not all(isinstance(student, str) for student in value):
-            raise TypeError("students must be a list of strings")
-        self._students = value
