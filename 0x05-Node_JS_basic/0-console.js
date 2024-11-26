@@ -23,8 +23,6 @@
  * @module displayMessage
  * @version 1.0.0
  */
-
-
 const displayMessage = (msg) => {
   console.log(msg);
 };
