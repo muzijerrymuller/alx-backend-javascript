@@ -17,7 +17,7 @@
  * - Ensures clear and consistent logging in any application.
  *
  * @author
- * Bezaleel Olakunori 
+ * Bezaleel Olakunori
  * [GitHub Profile](https://github.com/B3zaleel)
  *
  * @module displayMessage
