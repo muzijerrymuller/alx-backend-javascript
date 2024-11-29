@@ -1,0 +1,12 @@
+{
+  "name": "0x06-unittests_in_js",
+  "version": "1.0.0",
+  "description": "This project is a hands-on journey into unit testing, integration testing, and test-driven development (TDD) in JavaScript. Here’s what one could learn and demonstrate to a technical recruiter:",
+  "main": "0-calcul.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
