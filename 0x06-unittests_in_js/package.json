@@ -1,20 +1,16 @@
 {
-  "name": "8-api",
+  "name": "0x06-unittests_in_js",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1"
-  },
+  "description": "This project is a hands-on journey into unit testing, integration testing, and test-driven development (TDD) in JavaScript. Here’s what one could learn and demonstrate to a technical recruiter:",
+  "main": "0-calcul.js",
+  "dependencies": {},
   "devDependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^6.2.2",
-    "request": "^2.88.0",
-    "sinon": "^7.5.0"
-  }
+    "mocha": "^10.8.2"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
