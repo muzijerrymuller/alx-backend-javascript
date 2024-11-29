@@ -6,8 +6,10 @@ const PORT = 1245;
 const DB_FILE = process.argv.length > 2 ? process.argv[2] : '';
 /**
  * Counts the total number of students listed in a CSV data file.
- * This function reads the CSV file from the specified path, processes its contents,
- * and returns the number of student records in the file. It assumes that each row
+ * This function reads the CSV file from the
+ * specified path, processes its contents,
+ * and returns the number of student records
+ * in the file. It assumes that each row
  * in the CSV represents a student, and the file follows a structured format
  * @param {String} dataPath -
  * The path to the CSV data file. This can be an absolute
@@ -19,7 +21,6 @@ const DB_FILE = process.argv.length > 2 ? process.argv[2] : '';
  * console.log(studentCount);  //
  * Outputs the number of students found in the CSV file.
  */
-
 
 const countStudents = (dataPath) => new Promise((resolve, reject) => {
   if (!dataPath) {
